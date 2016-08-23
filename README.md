@@ -24,6 +24,7 @@ xcode-select --install
 Then, you need to compile FLTK, which is in the fltk-1.3.x-r11880 directory
 ```
 cd fltk-1.3.x-r11880
+./configure
 make
 ```
 If the compilation process succeded you can test FLTK
