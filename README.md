@@ -11,17 +11,36 @@ Move to your working directory and run the followin command (you need to install
 git clone https://github.com/whitehatty/Programming-Principles-and-Practice-Using-Cpp.git
 ```
 
+### Ubuntu Linux LTS 16.04
 On Ubuntu Linux LTS 16.04.1 you need to install some dependencies first
 ```
 sudo apt-get install xorg-dev libjpeg-dev
 ```
+Compile FLTK
+```
+cd fltk-1.3.3
+./configure
+make
+```
+If the compilation process succeded you can test FLTK
+```
+cd test
+./demo
+```
 
+We now need to compile the exercises of the book. It should be as simple as
+```
+export FLTK="`pwd`/fltk-1.3.x-r11880/"
+make
+```
+
+### Mac OS X El Capitan
 On Mac OS X you need to install Xcode. You also want the command line tools
 ```
 xcode-select --install
 ```
 
-Then, you need to compile FLTK, which is in the fltk-1.3.x-r11880 directory
+Compile FLTK
 ```
 cd fltk-1.3.x-r11880
 ./configure
