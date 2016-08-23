@@ -40,4 +40,8 @@ make
 
 Enjoy! :-)
 
+##Troubleshooting
+
+To compile Chapter 23 you must install boost
+
 Give Bjarne Stroustrup an heads up so that he updates his code on the website, thanks. 
