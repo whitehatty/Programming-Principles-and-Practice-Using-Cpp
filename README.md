@@ -4,3 +4,11 @@ This is the support code for Stroustrup book: "Programming: Principles and Pract
 I modified the code on his website so that it compiles on modern operating systems and compilers.
 
 Compilation and code has been tested on Ubuntu Linux 16.04.1 and Mac OS X El Capitan (10.11.6).
+
+## Installation
+
+```
+git clone https://github.com/whitehatty/Programming-Principles-and-Practice-Using-Cpp.git
+```
+
+### Ubuntu Linux
