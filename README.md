@@ -32,7 +32,7 @@ cd test
 ./demo
 ```
 
-We now need to compile the exercise of the book. It should be as simple as
+We now need to compile the exercises of the book. It should be as simple as
 ```
 make
 ```

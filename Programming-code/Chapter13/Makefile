@@ -13,7 +13,7 @@
 INCLUDES = -I"../GUI" -I"$(FLTK)"
 LIBS     = -lstdc++ -lbookgui -lfltk -lfltk_images
 CXXFLAGS = $(INCLUDES) -Wall -time -O3 -DNDEBUG
-LIBFLAGS = -L"../GUI"
+LIBFLAGS = -L"../GUI" -L"../fltk-1.3.x-r11880/lib"
 AR       = ar
 
 # NOTE: If under Cygwin you get an error that uname command is not found,
@@ -29,7 +29,7 @@ ifeq ($(OS),Cygwin)
   LIBS := $(LIBS) -lfltk_jpeg -luser32 -lgdi32 -lshell32 -lole32 -luuid -lWs2_32 -lComCtl32
 else
 ifeq ($(OS),Darwin)
-  LIBS := $(LIBS) -ljpeg -framework Carbon
+  LIBS := $(LIBS) -ljpeg -framework AppKit
 else
   LIBS := $(LIBS) -lX11 -ljpeg
 endif
