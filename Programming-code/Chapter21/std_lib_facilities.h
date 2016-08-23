@@ -29,7 +29,8 @@ namespace __gnu_cxx {
     {
         size_t operator()(const std::string& s) const
         {
-            return hash<char*>()(s.c_str());
+	    // the book says to ask somebody how to fix the problem...the problem is the lack of const qualifier
+            return hash<const char*>()(s.c_str());
         }
     };
 
