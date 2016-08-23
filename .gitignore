@@ -1,3 +1,6 @@
+# ignore Mac OS X junk
+.DS_Store
+
 # Compiled Object files
 *.slo
 *.lo
