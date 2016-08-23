@@ -36,7 +36,7 @@ void f(const vector<int>& v)
 // copy all elements with a value larger than 6
 {
     vector<int> v2(v.size());
-    copy_if(v.begin(), v.end(), v2.begin(), Larger_than(6));
+    ::copy_if(v.begin(), v.end(), v2.begin(), Larger_than(6));
     // ...
 }
 
