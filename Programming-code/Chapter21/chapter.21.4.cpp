@@ -31,10 +31,10 @@ public:
 
 void f(list<double>& v, int x)
 {
-    list<double>::iterator p = find_if(v.begin(), v.end(), Larger_than(31));
+    list<double>::iterator p = ::find_if(v.begin(), v.end(), Larger_than(31));
     if (p!=v.end()) { /* we found value > 31 */ }
 
-    list<double>::iterator q = find_if(v.begin(), v.end(), Larger_than(x));
+    list<double>::iterator q = ::find_if(v.begin(), v.end(), Larger_than(x));
     if (q!=v.end()) { /* we found value > x */ }
 
     // ...
@@ -50,7 +50,7 @@ int main()
 
     list<double> v(first,last);
 
-    find_if(v.begin(),v.end(),Larger_than(31));
+    ::find_if(v.begin(),v.end(),Larger_than(31));
 }
 
 //------------------------------------------------------------------------------

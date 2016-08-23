@@ -24,7 +24,7 @@ bool odd(int x) { return x%2; }    // % is the modulo operator
 
 void f(vector<int>& v)
 {
-    vector<int>::iterator p = find_if(v.begin(), v.end(), odd);
+    vector<int>::iterator p = ::find_if(v.begin(), v.end(), odd);
     if (p!=v.end()) { /* we found and odd number */ }
     // ...
 }
@@ -35,7 +35,7 @@ bool larger_than_42(int x) { return x>42; }
 
 void f(list<double>& v)
 {
-    list<double>::iterator p = find_if(v.begin(), v.end(), larger_than_42);
+    list<double>::iterator p = ::find_if(v.begin(), v.end(), larger_than_42);
     if (p!=v.end()) { /* we found value > 42 */ }
     // ...
 }
@@ -48,11 +48,11 @@ bool larger_than_v(int x) { return x>v; }
 void f(list<double>& v, int x)
 {
     ::v = 31; // set v to 31 for the next call of larger_than_v
-    list<double>::iterator p = find_if(v.begin(), v.end(), larger_than_v);
+    list<double>::iterator p = ::find_if(v.begin(), v.end(), larger_than_v);
     if (p!=v.end()) { /* we found value > 31 */ }
 
     ::v = x;  // set v to x for the next call of larger_than_v
-    list<double>::iterator q = find_if(v.begin(), v.end(), larger_than_v);
+    list<double>::iterator q = ::find_if(v.begin(), v.end(), larger_than_v);
     if (q!=v.end()) { /* we found value > x*/ }
 
     // ...
