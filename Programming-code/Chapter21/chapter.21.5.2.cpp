@@ -58,7 +58,7 @@ T accumulate(In first, In last, T init, BinOp op)
 
 int main()
 {
-    array<double,4> a = { 1.1, 2.2, 3.3, 4.4 };    // See §20.9
+    ::array<double,4> a = { 1.1, 2.2, 3.3, 4.4 };    // See §20.9
     cout << accumulate(a.begin(),a.end(), 1.0, multiplies<double>());
 }
 
