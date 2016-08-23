@@ -14,7 +14,7 @@ using namespace Graph_lib;
 
 //------------------------------------------------------------------------------
 
-struct Simple_window : Window {
+struct Simple_window : Graph_lib::Window {
     Simple_window(Point xy, int w, int h, const string& title );
 
     bool wait_for_button(); // simple event loop
