@@ -23,7 +23,7 @@ In find(In first, In last, const T& val)
 
 void f(vector<int>& v, int x)
 {
-    vector<int>::iterator p = find(v.begin(),v.end(),x);
+    vector<int>::iterator p = ::find(v.begin(),v.end(),x);
     if (p!=v.end()) {
         // we found x in v
     }
