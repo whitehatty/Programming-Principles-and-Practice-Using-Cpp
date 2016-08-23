@@ -34,7 +34,7 @@ cd test
 
 We now need to compile the exercises of the book. It should be as simple as
 ```
-export FLTK="\`pwd\`/fltk-1.3.x-r11880/"
+export FLTK="`pwd`/fltk-1.3.x-r11880/"
 make
 ```
 
