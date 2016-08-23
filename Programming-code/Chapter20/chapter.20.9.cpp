@@ -51,8 +51,8 @@ Iterator high(Iterator first, Iterator last)
 
 void f()
 {
-    array<double,6> a = { 0.0, 1.1, 2.2, 3.3, 4.4, 5.5 };
-    array<double,6>::iterator p = high(a.begin(), a.end());
+    ::array<double,6> a = { 0.0, 1.1, 2.2, 3.3, 4.4, 5.5 };
+    ::array<double,6>::iterator p = high(a.begin(), a.end());
     cout << "the highest value was " << *p << endl;
 }
 
