@@ -69,7 +69,7 @@ try
 
     Text t(Point(150,150), "Hello, graphical world! ");
     win.attach(t);
-    t.set_font(Font::times_bold);
+    t.set_font(Graph_lib::Font::times_bold);
     t.set_font_size(20);
 
     Image ii(Point(100,50),"image.jpg"); // 400*212 pixel jpg
