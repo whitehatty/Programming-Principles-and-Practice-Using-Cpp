@@ -5,6 +5,7 @@
 //
 
 #include "Matrix.h"
+#include <cstdlib>
 
 using namespace Numeric_lib;
 
